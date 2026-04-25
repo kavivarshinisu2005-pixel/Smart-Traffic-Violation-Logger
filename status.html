@@ -1,0 +1,18 @@
+<body class="bg-dark text-white text-center">
+
+<div class="container mt-5">
+
+    <h2>🚓 Violation Status</h2>
+
+    <div class="card p-4 text-dark">
+        <h4>{{record.vehicle}}</h4>
+        <p>{{record.violation}}</p>
+
+        <h5 class="text-{{ 'success' if record.status=='Paid' else 'danger' }}">
+            {{record.status}}
+        </h5>
+    </div>
+
+</div>
+
+</body>
